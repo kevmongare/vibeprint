@@ -1,12 +1,13 @@
 import './App.css'
+import Logo from "./assets/Logo.png"
 
 function App() {
 
   return (
     <>
-    //Menu bar
+    {/* Menu Bar section */}
       <section  className='position-top sticky px-5 md:px-25 py-5 text-gray-800 postition-0 w-full shadow-sm left-0 top-0 mx-auto justify-between flex items-center bg-white/80 md:py-0 z-50'>
-      <h1 className='flex items-center md:text-2xl text-sm font-extrabold text-orange-600'><img src= "" alt="" className='h-20 hidden md:flex' />Vite<span className='text-blue-600'>Print</span></h1>
+      <img src= {Logo} alt="" className='h-20 hidden md:flex' />
     
         <ul className='flex items-center'>
           <a href="" className='mr-5 text-1xl hover:text-orange-600 text-gray-800'> Home </a>
