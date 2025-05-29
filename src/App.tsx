@@ -13,15 +13,27 @@ function App() {
         <p>0706384510</p></div>
       
     </div>
-      <section  className='position-top sticky px-5 md:px-25 py-5 text-gray-800 postition-0 w-full shadow-sm left-0 top-0 mx-auto justify-between flex items-center bg-white md:bg-white/80 md:py-0 z-50'>
+      <section  className='position-top sticky px-5 md:px-25 py-5 text-gray-800 postition-0 w-full shadow-sm left-0 top-0 mx-auto justify-between flex items-center bg-white md:bg-white/90 md:py-0 z-50'>
       
       <a href=""><img src= {Logo} alt="" className='md:h-20 h-10 mr-5' /></a>
     
         <ul className='flex items-center'>
-          <a href="" className='mr-5 text-sm md:text-1xl hover:text-[var(--primary)] text-gray-800 focus:text-[var(--secondary)]'> Home </a>
-          <a href="#About-t" className='mr-5 text-sm md:text-1xl hover:text-[var(--primary)] text-gray-800 focus:text-[var(--secondary)]'> About</a>
-          <a href="" className='mr-5 text-sm md:text-1xl hover:text-[var(--primary)] text-gray-800 focus:text-[var(--secondary)]'>Projects</a>
-          <a href="#contact" className='mr-5 text-sm md:text-1xl hover:text-[var(--primary)] text-gray-800 focus:text-[var(--secondary)]'>Contact</a>
+         <a href="#home" 
+            className="mr-5 text-sm md:text-1xl text-gray-800 hover:text-[var(--primary)] focus:text-[var(--secondary)]">
+              Home
+        </a>
+        <a href="#About-t" 
+            className="mr-5 text-sm md:text-1xl text-gray-800 hover:text-[var(--primary)] focus:text-[var(--secondary)]">
+              About
+        </a>
+          <a href="#" 
+            className="mr-5 text-sm md:text-1xl text-gray-800 hover:text-[var(--primary)] focus:text-[var(--secondary)]">
+              Projects
+              </a>
+          <a href="#contact" 
+          className="mr-5 text-sm md:text-1xl text-gray-800 hover:text-[var(--primary)] focus:text-[var(--secondary)]">
+              Contact
+            </a>
         
       
       <div>
@@ -35,7 +47,7 @@ function App() {
 
 {/* Hero section */}
 
-<section className="min-h-[60vh] flex items-center justify-center px-6 bg-gray-100">
+<section className="min-h-[60vh] flex items-center justify-center px-6  max-w-7xl mx-auto">
     <div className="max-w-6xl w-full grid grid-cols-1 md:grid-cols-2 gap-10 items-center py-10">
      
       {/* <!-- Text Content --> */}
@@ -63,8 +75,110 @@ function App() {
 
     </div>
   </section>
+
+  {/* numbers section */}
+  <section>
+    <div className="max-w-7xl mx-auto columns-2 md:columns-4 gap-8 text-center p-8 bg-gradient-to-b from-transparent to-white shadow-blue-100 shadow-lg rounded-lg mt-10">
+            <div>
+                <h1 className="text-[var(--secondary)] font-bold text-4xl">5000+</h1>
+                <p className="text-gray-500 pt-5">People served</p>
+            </div>
+             <div >
+                <h1 className="text-[var(--secondary)] font-bold text-4xl">99%</h1>
+                <p className="text-gray-500 pt-4">Success Rate</p>
+            </div>
+            <div>
+                <h1 className="text-[var(--secondary)] font-bold text-4xl">150+</h1>
+                <p className="text-gray-500 pt-4">Events hosted</p>
+            </div>
+            <div>
+                <h1 className="text-[var(--secondary)] font-bold text-4xl">5</h1>
+                <p className="text-gray-500 pt-4">Branches within the country</p>
+            </div>
+
+        </div>
+  </section>
+
+{/* services section  */}
+
+  <section>
+<div>
+           
+                
+        <div className="grid items-center md:flex columns-auto max-w-7xl mx-auto px-5 py-8">
+            <div className="overflow-hidden hover:shadow-lg bg-white mx-2 my-8  border-2 border-gray-100 100 rounded-xl pb-5 hover:scale-105 hover:border-0" >
+                
+                <img src="" alt="" 
+                className="h-50 object-cover mx-auto  100"/>
+                
+                <h1 className="ml-5 text-2xl font-semibold text-[var(--secondary)] pt-5">Coporate Events</h1>
+                <p className="text-gray-600 p-2 ml-5 text-sm"> Your Brand Our Expertise
+                </p>
+                <a href="" className="text-[var(--primary)] border-2 border-[var(--primary)] rounded-full text-1xl px-2 py-1 font-bold ml-5 hover:bg-[var(--primary)] hover:text-white"> Book Now</a>
+            </div>
+            <div className="overflow-hidden hover:shadow-lg bg-white mx-2 my-8  border-2 border-gray-100 100 rounded-xl pb-5 hover:scale-105 hover:border-0" >
+                
+                <img src="" alt="" 
+                className="h-50 object-cover mx-auto  100"/>
+                <h1 className="ml-5 text-2xl font-semibold text-[var(--secondary)] pt-5">Weddings</h1>
+                <p className="text-gray-600 p-2 ml-5 text-sm"> Your Brand Our Expertise
+                </p>
+                <a href="" className="text-[var(--primary)] border-2 border-[var(--primary)] rounded-full text-1xl px-2 py-1 font-bold ml-5 hover:bg-[var(--primary)] hover:text-white"> Book Now</a>
+            </div>
+            <div className="overflow-hidden hover:shadow-lg bg-white mx-2 my-8  border-2 border-gray-100 100 rounded-xl pb-5 hover:scale-105 hover:border-0" >
+                
+                <img src="" alt="" 
+                className="h-50 object-cover mx-auto  100"/>
+                <h1 className="ml-5 text-2xl font-semibold text-[var(--secondary)] pt-5">Ruracios</h1>
+                <p className="text-gray-600 p-2 ml-5 text-sm"> Your Brand Our Expertise
+                </p>
+                <a href="" className="text-[var(--primary)] border-2 border-[var(--primary)] rounded-full text-1xl px-2 py-1 font-bold ml-5 hover:bg-[var(--primary)] hover:text-white"> Book Now</a>
+            </div>
+            <div className=" overflow-hidden hover:shadow-lg bg-white mx-2 my-8  border-2 border-gray-100 100 rounded-xl pb-5 hover:scale-105 hover:border-0" >
+                
+                <img src ="" alt="" 
+                className="h-50 object-cover mx-auto  100"/>
+                <h1 className="ml-5 text-2xl font-semibold text-[var(--secondary)] pt-5">Birthdays</h1>
+                <p className="text-gray-600 p-2 ml-5 text-sm"> Your Brand Our Expertise
+                </p>
+                <a href="" className="text-[var(--primary)] border-2 border-[var(--primary)] rounded-full text-1xl px-2 py-1 font-bold ml-5 hover:bg-[var(--primary)] hover:text-white"> Book Now</a>
+            </div>
+        </div>
+        </div>
+  </section>
+
+  {/* <!-- Testimonials Section --> */}
+  <section className="py-16 max-w-7xl shadow-lg mx-auto rounded-sm">
+    <div className="max-w-5xl mx-auto px-6 text-center">
+      <h2 className="text-3xl md:text-4xl font-bold mb-12 text-[var(--primary)]">What Our Clients Say</h2>
+      <div className="space-y-10 md:space-y-0 md:flex md:space-x-8">
+        <blockquote className="bg-gray-100 rounded-lg p-6 shadow flex-1">
+          <p className="italic text-gray-700 mb-4">
+            "This branding agency completely transformed our company’s image. The new logo and messaging have brought us more customers than ever!"
+          </p>
+          <footer className="font-semibold text-[var(--secondary)]">– Sarah L., CEO</footer>
+        </blockquote>
+
+        <blockquote className="bg-gray-100 rounded-lg p-6 shadow flex-1">
+          <p className="italic text-gray-700 mb-4">
+            "Professional, creative, and attentive. They helped us craft a clear brand strategy that drives all our marketing efforts."
+          </p>
+          <footer className="font-semibold text-[var(--secondary)]">– Mike D., Marketing Director</footer>
+        </blockquote>
+
+        <blockquote className="bg-gray-100 rounded-lg p-6 shadow flex-1">
+          <p className="italic text-gray-700 mb-4">
+            "Excellent service and results! Their visual content creation made our social media stand out."
+          </p>
+          <footer className="font-semibold text-[var(--secondary)]">– Emma K., Founder</footer>
+        </blockquote>
+      </div>
+    </div>
+  </section>
+
+
       {/* working on newsletter and email subscription option */}
-      <div className="max-w-7xl mx-auto flex flex-col md:flex-row gap-8 pb-5 bg-white rounded-sm p-10 mt-5 shadow-xl index-10" id='contact'>
+      <div className="max-w-7xl mx-auto flex flex-col md:flex-row gap-8 pb-5 bg-white/50 rounded-sm p-10 mt-1  shadow-xl index-10" id='contact'>
   
             <div className="flex-1 p-8 ">
             <div className="text-center">

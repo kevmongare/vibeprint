@@ -5,7 +5,7 @@ import App from './App.tsx'
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-    <div className='bg-gradient-to-b from-white to-[var(--primary)] h-full'><App /></div>
+    <div className='bg-gradient-to-b from-white to-[var(--primary1)] h-full'><App /></div>
     
 
   </StrictMode>,
