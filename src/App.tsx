@@ -15,7 +15,7 @@ function App() {
     </div>
       <section  className='position-top sticky px-5 md:px-25 py-5 text-gray-800 postition-0 w-full shadow-sm left-0 top-0 mx-auto justify-between flex items-center bg-white/80 md:py-0 z-50'>
       
-      <a href=""><img src= {Logo} alt="" className='md:h-20 h-10 ml-5' /></a>
+      <a href=""><img src= {Logo} alt="" className='md:h-20 h-10 mr-5' /></a>
     
         <ul className='flex items-center'>
           <a href="" className='mr-5 text-sm md:text-1xl hover:text-[var(--primary)] text-gray-800'> Home </a>
