@@ -1,5 +1,6 @@
 import './index.css'
 import Logo from "./assets/Logo.png"
+import Hero from "./assets/Hero.gif"
 
 function App() {
 
@@ -32,7 +33,36 @@ function App() {
       </ul>
       </section>
 
+{/* Hero section */}
 
+<section className="min-h-[60vh] flex items-center justify-center px-6 bg-gray-100">
+    <div className="max-w-6xl w-full grid grid-cols-1 md:grid-cols-2 gap-10 items-center py-10">
+     
+      {/* <!-- Text Content --> */}
+      <div className="space-y-6">
+        <h1 className="text-4xl lg:text-5xl font-bold text-gray-900">
+          Empowering Businesses with Smart Solutions
+        </h1>
+        <p className="text-lg text-gray-600">
+          We provide innovative, reliable, and secure tech services tailored to your business needs.
+        </p>
+        <div className="flex gap-4">
+          <a href="#contact" className="px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition">
+            Get Started
+          </a>
+          <a href="#learn-more" className="px-6 py-3 border border-blue-600 text-blue-600 rounded-lg hover:bg-blue-50 transition">
+            Learn More
+          </a>
+        </div>
+      </div>
+
+      {/* <!-- Image / Visual --> */}
+      <div>
+        <img src= {Hero}alt="Corporate Illustration" className="w-full rounded-xl shadow-lg object-cover"/>
+      </div>
+
+    </div>
+  </section>
       {/* working on newsletter and email subscription option */}
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row gap-8 pb-5 bg-white rounded-sm p-10 mt-5 shadow-xl index-10" id='contact'>
   
