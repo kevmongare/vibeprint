@@ -44,7 +44,7 @@ function App() {
           Empowering Businesses with Smart Solutions
         </h1>
         <p className="text-lg text-gray-600">
-          We provide innovative, reliable, and secure tech services tailored to your business needs.
+          We provide innovative, reliable, and secure branding services tailored to your business needs.
         </p>
         <div className="flex gap-4">
           <a href="#contact" className="px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition">
