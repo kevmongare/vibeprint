@@ -15,19 +15,19 @@ function App() {
     </div>
       <section  className='position-top sticky px-5 md:px-25 py-5 text-gray-800 postition-0 w-full shadow-sm left-0 top-0 mx-auto justify-between flex items-center bg-white/80 md:py-0 z-50'>
       
-      <a href=""><img src= {Logo} alt="" className='h-20 hidden md:flex' /></a>
+      <a href=""><img src= {Logo} alt="" className='md:h-20 h-10' /></a>
     
         <ul className='flex items-center'>
-          <a href="" className='mr-5 text-1xl hover:text-[var(--primary)] text-gray-800'> Home </a>
-          <a href="#About-t" className='mr-5 text-1xl hover:text-[var(--primary)] text-gray-800'> About</a>
-          <a href="" className='mr-5 text-1xl hover:text-[var(--primary)] text-gray-800'>Projects</a>
-          <a href="#contact" className='mr-5 text-1xl hover:text-[var(--primary)] text-gray-800'>Contact</a>
+          <a href="" className='mr-5 text-sm md:text-1xl hover:text-[var(--primary)] text-gray-800'> Home </a>
+          <a href="#About-t" className='mr-5 text-sm md:text-1xl hover:text-[var(--primary)] text-gray-800'> About</a>
+          <a href="" className='mr-5 text-sm md:text-1xl hover:text-[var(--primary)] text-gray-800'>Projects</a>
+          <a href="#contact" className='mr-5 text-sm md:text-1xl hover:text-[var(--primary)] text-gray-800'>Contact</a>
         
       
       <div>
         <a href="" className=" rounded-full bg- bg-[var(--secondary)] border border-transparent bg-primary py-2 px-4 text-sm font-medium text-white hover:bg-primary-800 mr-2 hover:bg-orange-500 hidden md:inline-block">Register</a>
         
-          <a href='' className=" text-gray-900 ring-1 ring-orange-500 py-2 px-4 text-sm font-medium rounded-full hover:bg-[var(--primary)] hover:ring-0 hover:text-white" target='blank'>Log in <span aria-hidden="true">&rarr;</span></a>
+          <a href='' className="hidden md:inline-block text-gray-900 ring-1 ring-orange-500 py-2 px-4 text-sm font-medium rounded-full hover:bg-[var(--primary)] hover:ring-0 hover:text-white" target='blank'>Log in <span aria-hidden="true">&rarr;</span></a>
         
       </div>
       </ul>
@@ -117,7 +117,7 @@ function App() {
             </div>
             </div>
 
-            <section id="contact" className="flex-1 rounded-xl p-8  bg-white hover:shadow-xl">
+            <section id="contact" className="flex-1 rounded-xl p-8 justify-center items-center bg-white hover:shadow-xl">
             <h2 className="text-2xl font-bold text-center text-[var(--primary)] mb-6">Get in Touch</h2>
             <div className="space-y-4 ">
                 <div className="flex items-start space-x-4">
@@ -146,7 +146,7 @@ function App() {
                 </div>
             </div>
             <div className="mt-6">
-            <iframe className = "md:w-150 w-50 h=150 shadow-2xl rounded-2xl referrerpolicy="
+            <iframe className = "md:w-150 w-100 h=70 shadow-2xl rounded-2xl referrerpolicy="
             loading="lazy"
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3915.9221470790144!2d36.94046947487992!3d-1.3974949985893008!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f0d0078fdcce7%3A0xdde3324ee69cae62!2sMlolongo%20gossip!5e1!3m2!1sen!2ske!4v1747402783315!5m2!1sen!2ske">
             
