@@ -13,15 +13,15 @@ function App() {
         <p>0706384510</p></div>
       
     </div>
-      <section  className='position-top sticky px-5 md:px-25 py-5 text-gray-800 postition-0 w-full shadow-sm left-0 top-0 mx-auto justify-between flex items-center bg-white/80 md:py-0 z-50'>
+      <section  className='position-top sticky px-5 md:px-25 py-5 text-gray-800 postition-0 w-full shadow-sm left-0 top-0 mx-auto justify-between flex items-center bg-white md:bg-white/80 md:py-0 z-50'>
       
       <a href=""><img src= {Logo} alt="" className='md:h-20 h-10 mr-5' /></a>
     
         <ul className='flex items-center'>
-          <a href="" className='mr-5 text-sm md:text-1xl hover:text-[var(--primary)] text-gray-800'> Home </a>
-          <a href="#About-t" className='mr-5 text-sm md:text-1xl hover:text-[var(--primary)] text-gray-800'> About</a>
-          <a href="" className='mr-5 text-sm md:text-1xl hover:text-[var(--primary)] text-gray-800'>Projects</a>
-          <a href="#contact" className='mr-5 text-sm md:text-1xl hover:text-[var(--primary)] text-gray-800'>Contact</a>
+          <a href="" className='mr-5 text-sm md:text-1xl hover:text-[var(--primary)] text-gray-800 focus:text-[var(--secondary)]'> Home </a>
+          <a href="#About-t" className='mr-5 text-sm md:text-1xl hover:text-[var(--primary)] text-gray-800 focus:text-[var(--secondary)]'> About</a>
+          <a href="" className='mr-5 text-sm md:text-1xl hover:text-[var(--primary)] text-gray-800 focus:text-[var(--secondary)]'>Projects</a>
+          <a href="#contact" className='mr-5 text-sm md:text-1xl hover:text-[var(--primary)] text-gray-800 focus:text-[var(--secondary)]'>Contact</a>
         
       
       <div>
