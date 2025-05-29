@@ -1,6 +1,10 @@
 import './index.css'
 import Logo from "./assets/Logo.png"
 import Hero from "./assets/Hero.gif"
+import Tote from "./assets/Tote.png"
+import Apparel from "./assets/Apparels.png"
+import Drinkware from "./assets/Drinkware.png"
+import Corporate from "./assets/combo-gift-set-a5-cork-note-book-wooden-pen-woode-key_-chain-750x750-removebg-preview.png"
 
 function App() {
 
@@ -77,8 +81,8 @@ function App() {
   </section>
 
   {/* numbers section */}
-  <section>
-    <div className="max-w-7xl mx-auto columns-2 md:columns-4 gap-8 text-center p-8 bg-gradient-to-b from-transparent to-white shadow-blue-100 shadow-lg rounded-lg mt-10">
+  {/* <section>
+    <div className="max-w-7xl mx-auto columns-2 md:columns-4 gap-8 text-center p-8 bg-gradient-to-b from-transparent to-white  shadow-lg rounded-lg mt-10">
             <div>
                 <h1 className="text-[var(--secondary)] font-bold text-4xl">5000+</h1>
                 <p className="text-gray-500 pt-5">People served</p>
@@ -97,19 +101,18 @@ function App() {
             </div>
 
         </div>
-  </section>
+  </section> */}
 
 {/* services section  */}
 
   <section>
-<div>
-           
-                
-        <div className="grid items-center md:flex columns-auto max-w-7xl mx-auto px-5 py-8">
+<div className='max-w-7xl bg-white mx-auto mt-2 shadow-2xl rounded-lg'> 
+  <h1 className='text-[var(--secondary)] md:text-5xl text-4xl text-center py-5 font-bold'>Our Services</h1>          
+        <div className="grid items-center md:flex columns-auto max-w-7xl mx-auto px-5 pt-1 pb-8">
             <div className="overflow-hidden hover:shadow-lg bg-white mx-2 my-8  border-2 border-gray-100 100 rounded-xl pb-5 hover:scale-105 hover:border-0" >
                 
-                <img src="" alt="" 
-                className="h-50 object-cover mx-auto  100"/>
+                <img src={Tote} alt="" 
+                className="h-50 object-cover w-full md:object-contain mx-auto bg-gray-100 md:w-80"/>
                 
                 <h1 className="ml-5 text-2xl font-semibold text-[var(--secondary)] pt-5">Coporate Events</h1>
                 <p className="text-gray-600 p-2 ml-5 text-sm"> Your Brand Our Expertise
@@ -118,8 +121,8 @@ function App() {
             </div>
             <div className="overflow-hidden hover:shadow-lg bg-white mx-2 my-8  border-2 border-gray-100 100 rounded-xl pb-5 hover:scale-105 hover:border-0" >
                 
-                <img src="" alt="" 
-                className="h-50 object-cover mx-auto  100"/>
+                <img src={Apparel} alt="" 
+                className="h-50 object-cover w-full md:object-contain mx-auto bg-gray-100 md:w-80"/>
                 <h1 className="ml-5 text-2xl font-semibold text-[var(--secondary)] pt-5">Weddings</h1>
                 <p className="text-gray-600 p-2 ml-5 text-sm"> Your Brand Our Expertise
                 </p>
@@ -127,8 +130,8 @@ function App() {
             </div>
             <div className="overflow-hidden hover:shadow-lg bg-white mx-2 my-8  border-2 border-gray-100 100 rounded-xl pb-5 hover:scale-105 hover:border-0" >
                 
-                <img src="" alt="" 
-                className="h-50 object-cover mx-auto  100"/>
+                <img src={Corporate} alt="" 
+                className="h-50 object-cover w-full md:object-contain mx-auto bg-gray-100 md:w-80"/>
                 <h1 className="ml-5 text-2xl font-semibold text-[var(--secondary)] pt-5">Ruracios</h1>
                 <p className="text-gray-600 p-2 ml-5 text-sm"> Your Brand Our Expertise
                 </p>
@@ -136,8 +139,8 @@ function App() {
             </div>
             <div className=" overflow-hidden hover:shadow-lg bg-white mx-2 my-8  border-2 border-gray-100 100 rounded-xl pb-5 hover:scale-105 hover:border-0" >
                 
-                <img src ="" alt="" 
-                className="h-50 object-cover mx-auto  100"/>
+                <img src ={Drinkware} alt="" 
+                className="h-50 object-cover w-full md:object-contain mx-auto bg-gray-100 md:w-80"/>
                 <h1 className="ml-5 text-2xl font-semibold text-[var(--secondary)] pt-5">Birthdays</h1>
                 <p className="text-gray-600 p-2 ml-5 text-sm"> Your Brand Our Expertise
                 </p>
