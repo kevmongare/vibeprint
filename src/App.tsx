@@ -51,7 +51,7 @@ function App() {
 
 {/* Hero section */}
 
-<section className="min-h-[60vh] flex items-center justify-center px-6  max-w-7xl mx-auto">
+<section className="min-h-[60vh] flex items-center justify-center px-6  max-w-7xl mx-auto bg-white shadow-lg rounded-sm">
     <div className="max-w-6xl w-full grid grid-cols-1 md:grid-cols-2 gap-10 items-center py-10">
      
       {/* <!-- Text Content --> */}
@@ -105,8 +105,8 @@ function App() {
 
 {/* services section  */}
 
-  <section>
-<div className='max-w-7xl bg-white mx-auto mt-2 shadow-2xl rounded-lg'> 
+  <section className=''>
+<div className='max-w-7xl bg-white mx-auto mt-2 shadow-lg rounded-sm'> 
   <h1 className='text-[var(--secondary)] md:text-5xl text-4xl text-center py-5 font-bold'>Our Services</h1>          
         <div className="grid items-center md:flex columns-auto max-w-7xl mx-auto px-5 pt-1 pb-8">
             <div className="overflow-hidden hover:shadow-lg bg-white mx-2 my-8  border-2 border-gray-100 100 rounded-xl pb-5 hover:scale-105 hover:border-0" >
@@ -151,7 +151,7 @@ function App() {
   </section>
 
   {/* <!-- Testimonials Section --> */}
-  <section className="py-16 max-w-7xl shadow-lg mx-auto rounded-sm">
+  <section className="py-16 max-w-7xl shadow-lg mx-auto rounded-sm bg-white mt-2">
     <div className="max-w-5xl mx-auto px-6 text-center">
       <h2 className="text-3xl md:text-4xl font-bold mb-12 text-[var(--primary)]">What Our Clients Say</h2>
       <div className="space-y-10 md:space-y-0 md:flex md:space-x-8">
