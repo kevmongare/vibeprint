@@ -60,7 +60,7 @@ function App() {
       {isOpen && (
         <ul className="md:hidden absolute top-full left-0 w-full bg-[var(--primary)]  shadow-md py-4 px-6 flex flex-col space-y-4">
           {navLinks.map(({ href, label }) => (
-            <li key={href} className='hover:bg-white text-white py-2 pl-5 hover:text-[var(--secondary)] rounded-l-2xl'>
+            <li key={href} className='hover:bg-white text-white py-1 pl-5 hover:text-[var(--secondary)] rounded-l-2xl'>
               <a
                 href={href}
                 onClick={() => setIsOpen(false)}
