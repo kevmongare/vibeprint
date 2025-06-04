@@ -1,3 +1,5 @@
+import { useState } from 'react';
+import { Menu, X } from 'lucide-react';
 import './index.css'
 import Logo from "./assets/Logo.png"
 import Hero from "./assets/Hero.gif"
@@ -6,7 +8,20 @@ import Apparel from "./assets/Apparels.png"
 import Drinkware from "./assets/Drinkware.png"
 import Corporate from "./assets/combo-gift-set-a5-cork-note-book-wooden-pen-woode-key_-chain-750x750-removebg-preview.png"
 
+
+const navLinks = [
+  { href: '#home', label: 'Home' },
+  { href: '#About-t', label: 'About' },
+  { href: '#', label: 'Projects' },
+  { href: '#contact', label: 'Contact' },
+];
+
+
+
 function App() {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleMenu = () => setIsOpen(!isOpen);
 
   return (
     <>
@@ -17,37 +32,51 @@ function App() {
         <p>0706384510</p></div>
       
     </div>
-      <section  className='position-top sticky px-5 md:px-25 py-5 text-gray-800 postition-0 w-full shadow-sm left-0 top-0 mx-auto justify-between flex items-center bg-white md:bg-white/90 md:py-0 z-50'>
-      
-      <a href=""><img src= {Logo} alt="" className='md:h-20 h-10 mr-5' /></a>
-    
-        <ul className='flex items-center'>
-         <a href="#home" 
-            className="mr-5 text-sm md:text-1xl text-gray-800 hover:text-[var(--primary)] focus:text-[var(--secondary)]">
-              Home
-        </a>
-        <a href="#About-t" 
-            className="mr-5 text-sm md:text-1xl text-gray-800 hover:text-[var(--primary)] focus:text-[var(--secondary)]">
-              About
-        </a>
-          <a href="#" 
-            className="mr-5 text-sm md:text-1xl text-gray-800 hover:text-[var(--primary)] focus:text-[var(--secondary)]">
-              Projects
-              </a>
-          <a href="#contact" 
-          className="mr-5 text-sm md:text-1xl text-gray-800 hover:text-[var(--primary)] focus:text-[var(--secondary)]">
-              Contact
+      <nav className="sticky top-0 z-50 w-full bg-white md:bg-white/90 shadow-sm px-5 md:px-25 py-5 flex items-center justify-between text-gray-800">
+      <a href="#home" aria-label="Homepage">
+        <img src={Logo} alt="My Logo" className="md:h-20 h-10 mr-5" />
+      </a>
+
+      {/* Desktop Menu */}
+      <ul className="hidden md:flex items-center space-x-6 font-medium">
+        {navLinks.map(({ href, label }) => (
+          <li key={href}>
+            <a
+              href={href}
+              className="text-sm md:text-lg text-gray-800 hover:text-[var(--primary)] focus:text-[var(--secondary)]"
+            >
+              {label}
             </a>
-        
-      
-      <div>
-        <a href="" className=" rounded-full bg- bg-[var(--secondary)] border border-transparent bg-primary py-2 px-4 text-sm font-medium text-white hover:bg-primary-800 mr-2 hover:bg-orange-500 hidden md:inline-block">Register</a>
-        
-          <a href='' className="hidden md:inline-block text-gray-900 ring-1 ring-orange-500 py-2 px-4 text-sm font-medium rounded-full hover:bg-[var(--primary)] hover:ring-0 hover:text-white" target='blank'>Log in <span aria-hidden="true">&rarr;</span></a>
-        
-      </div>
+          </li>
+        ))}
       </ul>
-      </section>
+
+      {/* Hamburger Menu */}
+      <button onClick={toggleMenu} className="md:hidden text-gray-700">
+        {isOpen ? <X size={24} /> : <Menu size={24} />}
+      </button>
+
+      {/* Mobile Menu */}
+      {isOpen && (
+        <ul className="md:hidden absolute top-full left-0 w-full bg-[var(--primary)]  shadow-md py-4 px-6 flex flex-col space-y-4">
+          {navLinks.map(({ href, label }) => (
+            <li key={href} className='hover:bg-white text-white py-2 pl-5 hover:text-[var(--secondary)] rounded-l-2xl'>
+              <a
+                href={href}
+                onClick={() => setIsOpen(false)}
+                className="text-sm "
+              >
+                {label}
+              </a>
+            </li>
+          ))}
+        </ul>
+      )}
+    </nav>
+        {/* Mobile Menu Icon */}
+        
+        
+        
 
 {/* Hero section */}
 
