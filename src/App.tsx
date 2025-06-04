@@ -34,7 +34,7 @@ function App() {
     </div>
       <nav className="sticky top-0 z-50 w-full bg-white md:bg-white/90 shadow-sm px-5 md:px-25 py-5 flex items-center justify-between text-gray-800">
       <a href="#home" aria-label="Homepage">
-        <img src={Logo} alt="My Logo" className="md:h-20 h-10 mr-5" />
+        <img src={Logo} alt="My Logo" className="md:h-15 h-10 mr-5" />
       </a>
 
       {/* Desktop Menu */}
@@ -43,7 +43,7 @@ function App() {
           <li key={href}>
             <a
               href={href}
-              className="text-sm md:text-lg text-gray-800 hover:text-[var(--primary)] focus:text-[var(--secondary)]"
+              className="text-sm md:text-4sm text-gray-800 hover:text-[var(--primary)] focus:text-[var(--secondary)]"
             >
               {label}
             </a>
@@ -64,7 +64,7 @@ function App() {
               <a
                 href={href}
                 onClick={() => setIsOpen(false)}
-                className="text-sm "
+                className="text-2sm "
               >
                 {label}
               </a>
